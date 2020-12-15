@@ -4,6 +4,11 @@ import { Counter } from './features/counter/Counter';
 import './App.css';
 
 function App() {
+  /*追加 output関数*/
+  // const output = (text) => {
+  //   console.log(text);
+  // };
+
   return (
     <div className="App">
       <header className="App-header">
