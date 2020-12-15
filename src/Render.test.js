@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import Render from './Render';
 
 describe('Rendering', () => {
-  it('Should render all the element correctly', () => {
+  it('Should render all the elements correctly', () => {
     render(<Render />);
     // screen.debug();
     // https://github.com/A11yance/aria-query#utilities
