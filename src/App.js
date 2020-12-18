@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 import RenderInput from './RenderInput';
+import FrameworkList from './FrameworkList';
+import UseEffectRender from './UseEffectRender';
+import MockServer from './MockServer';
 
 function App() {
   /*追加 output関数*/
@@ -10,12 +13,30 @@ function App() {
     console.log(text);
   };
 
+  const data = [
+    {
+      id: 1,
+      item: 'React',
+    },
+    {
+      id: 2,
+      item: 'Angular',
+    },
+    {
+      id: 3,
+      item: 'Vue',
+    },
+  ];
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <RenderInput outputConsole={output} />
+        <FrameworkList frameworks={data} />
+        <UseEffectRender />
+        <MockServer />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
